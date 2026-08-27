@@ -3,7 +3,7 @@
 from unittest import case
 
 
-alunos = int(10)
+alunos = int(5)
 
 for i in range(alunos):
     print("Digite a nota do", i + 1,"º aluno: ")
