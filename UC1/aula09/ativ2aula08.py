@@ -7,6 +7,7 @@ def calcular_imc(peso, altura):
     ''' 
        
     IMC = (peso / (altura * altura))
+    print(f"Seu IMC é: {IMC:.2f}")
     return IMC
 
 
@@ -28,7 +29,7 @@ def obter_classificacao(IMC):
     match IMC:
         case IMC if IMC < 18.5:
             print("Abaixo do peso")
-        case IMC if IMC >= 18.5 and IMC <= 24.9:
+        case IMC if IMC >= 18.5 and IMC <= 24.99:
             print("Peso normal")
         case IMC if IMC >= 25.00 and IMC <=29.99:
             print("Sobrepeso")
@@ -38,6 +39,11 @@ def obter_classificacao(IMC):
             print("Fora do valor de referência")
     return 
 
+print("CALCULADORA DE IMC")
+N = int(input("Digite quantas pessoas vão fazer a consulta: "))
+while 
+peso = float(input("Digite seu peso: "))
+altura = float(input("Digite seua altura: "))
 
 obter_classificacao(calcular_imc(101,2.00))
-print(calcular_imc(101,2.00))
+calcular_imc
