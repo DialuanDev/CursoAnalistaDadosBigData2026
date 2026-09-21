@@ -1,4 +1,9 @@
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt  
+
+
+
 
 #Nomear as variaveis de DataFrame para melhor entendimento
 df_transacoes = pd.read_excel("base_invest.xlsx", sheet_name='Transacoes')
@@ -46,3 +51,8 @@ print("CNPJ correspondente ao ativo de maior valor:", cnpj_maior_valor)
 id_participante_valor_total = df_transacoes.groupby('id_participante')['valor_total'].sum()
 print("Valor total em transações de cada participante:")
 print(id_participante_valor_total)   
+
+
+
+print(df_transacoes.head())  # Exibe as primeiras linhas do DataFrame df_transacoes
+print(df_transacoes.tail())  # Exibe as últimas linhas do DataFrame df_transacoes

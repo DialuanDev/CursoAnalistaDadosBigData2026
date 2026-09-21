@@ -1,5 +1,7 @@
 import pandas as pd  # alias 'pd'
 import numpy as np   # alias 'np'
+import matplotlib.pyplot as plt
+
 
 #LOC
 #ILOC
